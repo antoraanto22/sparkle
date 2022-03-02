@@ -7,6 +7,11 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -14,9 +19,9 @@ body {
     color: #707070;
 }
 
-p {
+/* p {
     line-height: 2.2;
-}
+} */
 
 .bt-btn {
     border: 1px;
@@ -24,20 +29,21 @@ p {
     border-color: transparent;
 
     font-size: 10px;
-    background-color: #ffe500;
+    background-color: #ffe50f;
     text-transform: uppercase;
     letter-spacing: 4px;
     padding: 18px 35px;
-    transition: all 300ms ease-in-out;
+    cursor: pointer;
+    transition: all 3s ease-in-out;
 }
 .bt-btn:hover {
-    border-color: #ffe500;
-    background-color: #1a1a1a;
-    color: white;
+    border-color: #ffe50f;
+    background-color: rgb(56, 52, 59);
+    color: #ffe50f;
 }
 
 .hero-section {
-    background-color: #1a1a1a;
+    background-color: rgb(56, 52, 59);
 }
 
 .menu-icon {
@@ -46,12 +52,12 @@ p {
     margin-left: auto;
 }
 .menu-icon span {
-    background-color: #ffe500;
+    background-color: #ffe50f;
     width: 100%;
     height: 2px;
     display: block;
     margin-bottom: 3px;
-    text-align: right;
+    
 }
 .menu-icon span:nth-child(2) {
     width: 80%;
@@ -76,12 +82,13 @@ p {
 }
 .hero-content h1 {
     font-size: 20px;
-    letter-spacing: 15px;
+    letter-spacing: 20px;
     margin-bottom: 25px;
 }
 .hero-content p {
     margin-bottom: 35px;
     font-size: 13px;
+    color: white;
 }
 .hero .arrow-down {
     position: absolute;
@@ -103,7 +110,8 @@ p {
 .about img {
     margin-bottom: 60px;
 }
-
+ 
+  /* OUR SERVICES */
 .services {
     background-color: #f4f4f4;
     padding-top: 80px;
@@ -123,7 +131,7 @@ p {
 
 /* SERVICE */
 .service-content-wrapper {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 .service-card {
     background-color: #fff;
@@ -140,7 +148,7 @@ p {
 }
 .service-line h5 {
     font-size: 13px;
-    font-weight: 700;
+    
 }
 .service-line-bg {
     background-color: #f4f4f4;
@@ -160,7 +168,7 @@ p {
 }
 .projects-card-wrapper .card {
     border-radius: 0;
-    background-color: pink;
+    background-color: #fff;
 }
 .project-card h4 {
     font-size: 15px;
@@ -170,3 +178,40 @@ p {
     font-size: 13px;
     margin-bottom: 0;
 }
+
+ /* Portfolio */
+ .portfolio{
+     padding-top: 50px;
+ }
+ .portofolio-name {
+     border-top: 1px solid #1b1b1b;
+     border-bottom: 1px solid #1b1b1b;
+     font-size: 14px;
+     color: #1b1b1b;
+     font-weight: 500;
+ }
+ .portofolio-card img{
+     width: 100%;
+     height: 500px;
+ }
+ .portofolio-card{
+     transition: all 0.5s ease-in-out;
+ }
+
+  .hover-content{
+     visibility: hidden;
+ } 
+ .portofolio-card:hover .hover-content{
+     visibility: visible;
+ }
+ .hover-content{
+    font-size: 13px;
+    font-weight: 500;
+ }
+ .hover-content p{
+     font-size: 12px;
+     line-height: 1.5;
+    font-style: italic;
+ }
+ 
+  
